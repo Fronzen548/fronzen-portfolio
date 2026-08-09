@@ -1,12 +1,11 @@
 import React from 'react'
-import { SiJavascript, SiNodedotjs, SiHtml5, SiCss3 } from 'react-icons/si'
 import { FiDownload } from 'react-icons/fi'
 
 const techs = [
-  { name: 'JavaScript', icon: SiJavascript, bg: '#f7df1e', fg: '#111' },
-  { name: 'Node.js', icon: SiNodedotjs, bg: '#3c873a', fg: '#fff' },
-  { name: 'HTML5', icon: SiHtml5, bg: '#e34f26', fg: '#fff' },
-  { name: 'CSS3', icon: SiCss3, bg: '#1572B6', fg: '#fff' }
+  { name: 'JavaScript', src: '/icons/javascript.svg' },
+  { name: 'Node.js', src: '/icons/nodejs.svg' },
+  { name: 'HTML5', src: '/icons/html5.svg' },
+  { name: 'CSS3', src: '/icons/css3.svg' }
 ]
 
 const stats = [
@@ -20,7 +19,7 @@ const RightSidebar: React.FC = () => {
   return (
     <aside className="hidden lg:block">
       <div className="space-y-6">
-        {/* Technologies card (refined spacing and visual) */}
+        {/* Technologies card */}
         <div className="rounded-[1.75rem] border border-white/6 bg-[rgba(10,9,18,0.6)] p-6 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-lg">
           <div className="flex items-center justify-between">
             <div>
@@ -34,23 +33,20 @@ const RightSidebar: React.FC = () => {
           </div>
 
           <div className="mt-6 grid gap-4 grid-cols-2">
-            {techs.map((t) => {
-              const Icon = t.icon
-              return (
-                <div key={t.name} className="flex items-center gap-4 rounded-2xl border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01))] px-4 py-3 transition transform hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(124,77,255,0.06)]">
-                  <span style={{ background: t.bg, color: t.fg }} className="flex h-12 w-12 items-center justify-center rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
-                    <Icon />
-                  </span>
-                  <div>
-                    <p className="text-sm font-semibold text-white">{t.name}</p>
-                  </div>
+            {techs.map((t) => (
+              <div key={t.name} className="flex items-center gap-4 rounded-2xl border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01))] px-4 py-3 transition transform hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(124,77,255,0.06)]">
+                <span className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#071826] shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
+                  <img src={t.src} alt={t.name} className="h-7 w-7 object-contain" />
+                </span>
+                <div>
+                  <p className="text-sm font-semibold text-white">{t.name}</p>
                 </div>
-              )
-            })}
+              </div>
+            ))}
           </div>
         </div>
 
-        {/* Stats card (larger numbers, closer to design) */}
+        {/* Stats card */}
         <div className="rounded-[1.75rem] border border-white/6 bg-[rgba(10,9,18,0.6)] p-6 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-lg">
           <div className="grid grid-cols-2 gap-4">
             {stats.map((s) => (
@@ -62,7 +58,7 @@ const RightSidebar: React.FC = () => {
           </div>
         </div>
 
-        {/* About card with illustration (refined visuals) */}
+        {/* About card with illustration */}
         <div className="rounded-[1.75rem] border border-white/6 bg-[rgba(10,9,18,0.6)] p-5 shadow-[0_30px_80px_rgba(0,0,0,0.45)] backdrop-blur-lg">
           <div className="flex items-center gap-4">
             <div className="w-28 flex-shrink-0">
