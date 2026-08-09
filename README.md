@@ -1,20 +1,23 @@
-# Fronzen548 — Portfolio (starter)
+# Fronzen548 Portfolio
 
-This repository contains a starter Next.js + TypeScript + Tailwind project to build a cyberpunk dark portfolio similar to the provided design.
+Dark cyberpunk portfolio built with Next.js, TypeScript, Tailwind CSS, Framer Motion and React Three Fiber.
 
-Features included:
-- Next.js + TypeScript
-- Tailwind CSS
-- Framer Motion ready
-- @react-three/fiber and drei installed for 3D Canvas
+## Features
+- Modern landing page with animated hero section
+- Interactive 3D orb powered by Three.js
+- Tech stack cards, project filters and project showcase
+- About section, contact form and contact cards
+- Responsive design with dark glassmorphism style
 
-How to run locally:
-1. npm install
-2. npm run dev
+## Run locally
+1. `npm install`
+2. `npm run dev`
+3. Open `http://localhost:3000`
 
-Deploy to Vercel:
-- Connect this repository to Vercel and deploy. Vercel will detect Next.js automatically.
+## Production build
+- `npm run build`
+- `npm run start`
 
-Replace placeholder assets and screenshots in /public and update content in /components and /pages.
-
-License: MIT
+## Notes
+- The contact form is connected to a placeholder API endpoint (`/api/contact`). Replace with your chosen email or messaging service for production.
+- Replace placeholder project links and images with your own content.
