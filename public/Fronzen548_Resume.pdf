@@ -9,7 +9,7 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 123 >>
+<< /Length 118 >>
 stream
 BT
 /F1 18 Tf
@@ -23,7 +23,7 @@ BT
 72 650 Td
 (GitHub: https://github.com/Fronzen548) Tj
 72 630 Td
-(Технічний стек: Node.js, TypeScript, React, Three.js) Tj
+(Tech stack: Node.js, TypeScript, React, Three.js) Tj
 ET
 endstream
 endobj
@@ -36,10 +36,10 @@ xref
 0000000010 00000 n 
 0000000055 00000 n 
 0000000115 00000 n 
-0000000273 00000 n 
-0000000410 00000 n 
+0000000266 00000 n 
+0000000386 00000 n 
 trailer
 << /Root 1 0 R /Size 6 >>
 startxref
-489
+656
 %%EOF
