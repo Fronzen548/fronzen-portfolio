@@ -1,12 +1,12 @@
 # Fronzen548 Portfolio
 
-Це темне кібepпанк портфоліо створене з використанням Next.js, TypeScript, Tailwind CSS, Framer Motion та React Three Fiber.
+Це темне кібepпанк портфоліо створене з використанням Next.js, TypeScript, Tailwind CSS та React Three Fiber.
 
 ## Що всередині
 - Сучасний landing page у стилі cyberpunk
-- 4K-подібний 3D рендер планети в hero-блоці
-- Блок технологій з іконками та стеком
-- Фільтрувані картки проєктів
+- 8K-подібний 3D рендер планети в hero-блоці
+- Блок технологій з JavaScript, Node.js, HTML5 та CSS3
+- Фільтрувані картки проєктів з акцентом на frontend і backend
 - Розділ «Про мене» з реальними даними
 - Контактна форма з бекендом API
 - Кнопка завантаження CV
