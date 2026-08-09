@@ -1,12 +1,16 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  // Этот endpoint — заглушка. Подключите почтовый сервис или serverless-функцию.
   if (req.method === 'POST') {
-    // В реальном проекте: валидация, отправка на почту или сохранение
-    res.status(200).json({ ok: true })
-  } else {
-    res.setHeader('Allow', ['POST'])
-    res.status(405).end('Method Not Allowed')
+    const { name, email, message } = req.body
+    if (!name || !email || !message) {
+      return res.status(400).json({ error: 'All fields are required' })
+    }
+
+    // TODO: Integrate with email service, Slack webhook or database.
+    return res.status(200).json({ ok: true, message: 'Contact form submitted' })
   }
+
+  res.setHeader('Allow', ['POST'])
+  res.status(405).end('Method Not Allowed')
 }
