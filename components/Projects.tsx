@@ -1,14 +1,14 @@
 import { useMemo, useState } from 'react'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
 
-const categories = ['All', 'Websites', 'Node.js', '3D', 'Admin']
+const categories = ['All', 'Websites', 'Node.js', 'Frontend', 'Backend']
 
 const projects = [
   {
     title: 'Fronzen Chat',
     category: 'Websites',
     description: 'Сучасний чат-додаток з авторизацією, каналами та реальним часом через Socket.io.',
-    tech: ['React', 'Socket.io', 'MongoDB'],
+    tech: ['JavaScript', 'Node.js', 'Socket.io'],
     github: 'https://github.com/Fronzen548/fronzen-chat',
     demo: '#'
   },
@@ -21,19 +21,19 @@ const projects = [
     demo: '#'
   },
   {
-    title: 'Solar System 4K',
-    category: '3D',
-    description: 'Інтерактивна 3D модель сонячної системи з плавними переходами та освітленням.',
-    tech: ['Three.js', 'TypeScript', 'WebGL'],
-    github: 'https://github.com/Fronzen548/solar-system',
+    title: 'Control Panel',
+    category: 'Frontend',
+    description: 'Сучасний інтерфейс адміністративної панелі з адаптивним дизайном та інтерактивними картами.',
+    tech: ['HTML5', 'CSS3', 'JavaScript'],
+    github: 'https://github.com/Fronzen548/project-control',
     demo: '#'
   },
   {
-    title: 'Project Control',
-    category: 'Admin',
-    description: 'Панель керування для командного проекту з дашбордом, графіками та трекером задач.',
-    tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
-    github: 'https://github.com/Fronzen548/project-control',
+    title: 'API Dashboard',
+    category: 'Backend',
+    description: 'Надійне рішення для моніторингу API, логування запитів та управління серверними сервісами.',
+    tech: ['Node.js', 'Express', 'MongoDB'],
+    github: 'https://github.com/Fronzen548/api-dashboard',
     demo: '#'
   }
 ]
