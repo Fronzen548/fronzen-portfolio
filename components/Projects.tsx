@@ -1,39 +1,39 @@
 import { useMemo, useState } from 'react'
 import { FiGithub, FiExternalLink } from 'react-icons/fi'
 
-const categories = ['All', 'Websites', 'Node.js', '3D', 'Other']
+const categories = ['All', 'Websites', 'Node.js', '3D', 'Admin']
 
 const projects = [
   {
-    title: 'Chat Application',
+    title: 'Fronzen Chat',
     category: 'Websites',
-    description: 'Сучасний чат-додаток з авторизацією, реальним часом та заточеним UX.',
-    tech: ['Node.js', 'Socket.io', 'MongoDB'],
-    github: 'https://github.com/Fronzen548/chat-app',
+    description: 'Сучасний чат-додаток з авторизацією, каналами та реальним часом через Socket.io.',
+    tech: ['React', 'Socket.io', 'MongoDB'],
+    github: 'https://github.com/Fronzen548/fronzen-chat',
     demo: '#'
   },
   {
-    title: 'E-Commerce API',
+    title: 'Fronzen Store API',
     category: 'Node.js',
-    description: 'REST API для інтернет-магазину з кошиком, товарами та оплатою.',
-    tech: ['Express', 'PostgreSQL', 'JWT'],
-    github: 'https://github.com/Fronzen548/ecommerce-api',
+    description: 'Масштабований REST API для інтернет-магазину з PostgreSQL, JWT та кешуванням.',
+    tech: ['Node.js', 'Express', 'PostgreSQL'],
+    github: 'https://github.com/Fronzen548/fstore-api',
     demo: '#'
   },
   {
-    title: '3D Solar System',
+    title: 'Solar System 4K',
     category: '3D',
-    description: 'Інтерактивна 3D модель сонячної системи на Three.js з плавними анімаціями.',
-    tech: ['Three.js', 'JavaScript', 'WebGL'],
+    description: 'Інтерактивна 3D модель сонячної системи з плавними переходами та освітленням.',
+    tech: ['Three.js', 'TypeScript', 'WebGL'],
     github: 'https://github.com/Fronzen548/solar-system',
     demo: '#'
   },
   {
-    title: 'Project Manager',
-    category: 'Websites',
-    description: 'Панель керування для команд та тасків з підсвіткою статусів.',
-    tech: ['React', 'TypeScript', 'Tailwind CSS'],
-    github: 'https://github.com/Fronzen548/project-manager',
+    title: 'Project Control',
+    category: 'Admin',
+    description: 'Панель керування для командного проекту з дашбордом, графіками та трекером задач.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    github: 'https://github.com/Fronzen548/project-control',
     demo: '#'
   }
 ]
