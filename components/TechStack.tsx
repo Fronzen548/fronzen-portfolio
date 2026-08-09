@@ -1,17 +1,11 @@
 import React from 'react'
-import { SiJavascript, SiNodedotjs, SiMongodb, SiPostgresql, SiHtml5, SiCss3, SiGit, SiDocker, SiSocketdotio, SiTypescript } from 'react-icons/si'
+import { SiJavascript, SiNodedotjs, SiHtml5, SiCss3 } from 'react-icons/si'
 
 const stack = [
   { name: 'JavaScript', icon: SiJavascript },
   { name: 'Node.js', icon: SiNodedotjs },
-  { name: 'MongoDB', icon: SiMongodb },
-  { name: 'PostgreSQL', icon: SiPostgresql },
   { name: 'HTML5', icon: SiHtml5 },
-  { name: 'CSS3', icon: SiCss3 },
-  { name: 'Git', icon: SiGit },
-  { name: 'Docker', icon: SiDocker },
-  { name: 'Socket.io', icon: SiSocketdotio },
-  { name: 'TypeScript', icon: SiTypescript }
+  { name: 'CSS3', icon: SiCss3 }
 ]
 
 const TechStack: React.FC = () => {
@@ -21,7 +15,7 @@ const TechStack: React.FC = () => {
         <div>
           <span className="text-xs tracking-[0.4em] uppercase text-neonblue">Stack</span>
           <h2 className="mt-3 text-4xl font-bold">Мої технології</h2>
-          <p className="mt-4 max-w-xl text-slate-300">Комплексний стек для створення продуктивних вебдодатків, API та інтерактивних інтерфейсів. Використовую чистий код і сучасний підхід до дизайну.</p>
+          <p className="mt-4 max-w-xl text-slate-300">Я працюю тільки з тим, що дійсно потрібно для якісних frontend і backend рішень. Мій стек сфокусований на верифікованих web-технологіях.</p>
         </div>
         <div className="grid gap-4 sm:grid-cols-2">
           {stack.map((item) => {
