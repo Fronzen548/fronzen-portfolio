@@ -30,6 +30,9 @@ const Navigation: React.FC = () => {
           ))}
         </nav>
         <div className="flex items-center gap-3">
+          <a href="/Fronzen548_Resume.pdf" download className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs uppercase tracking-[0.18em] text-slate-200 transition hover:bg-neonblue/10">
+            CV
+          </a>
           <button className="rounded-full border border-white/10 bg-white/5 px-3 py-2 text-xs uppercase tracking-[0.18em] text-slate-200 transition hover:bg-neonpurple/10">
             UA
           </button>
