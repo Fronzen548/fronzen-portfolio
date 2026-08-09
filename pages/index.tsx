@@ -12,11 +12,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Fronzen548 · Portfolio</title>
-        <meta name="description" content="Cyberpunk-style portfolio of Fronzen with modern full-stack projects and 3D visuals." />
+        <title>Fronzen548 · Full-Stack Portfolio</title>
+        <meta name="description" content="Fronzen548 — Full-Stack developer portfolio with dark cyberpunk design, 3D visuals, projects and contact form." />
         <meta property="og:title" content="Fronzen548 — Portfolio" />
-        <meta property="og:description" content="Full-Stack developer portfolio with engaging dark cyberpunk design, project showcase, tech stack and contact form." />
+        <meta property="og:description" content="Full-Stack developer portfolio with modern UI, immersive 3D planet render and project showcase." />
       </Head>
+
       <main className="min-h-screen bg-cyberbg text-white">
         <Navigation />
         <div className="container mx-auto px-6 py-8">
@@ -32,11 +33,12 @@ export default function Home() {
           <About />
 
           <section id="projects" className="mt-24">
-            <div className="flex items-center justify-between gap-4">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
               <div>
                 <span className="text-xs tracking-[0.4em] uppercase text-neonblue">Проєкти</span>
-                <h2 className="mt-3 text-4xl font-bold">Мої роботи</h2>
+                <h2 className="mt-3 text-4xl font-bold">Реальні кейси та готові рішення</h2>
               </div>
+              <p className="max-w-xl text-slate-400">Усі проєкти демонструють мій підхід до full-stack розробки, API, реального часу та 3D інтерфейсів.</p>
             </div>
             <Projects />
           </section>
