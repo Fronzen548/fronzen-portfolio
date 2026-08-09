@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic'
 import { motion } from 'framer-motion'
-import { FiGithub, FiMail, FiLinkedin, FiArrowRight } from 'react-icons/fi'
+import { FiGithub, FiMail, FiLinkedin, FiDownload, FiArrowRight } from 'react-icons/fi'
 
 const OrbitalSphere = dynamic(() => import('./OrbitalSphere'), {
   ssr: false,
@@ -23,14 +23,15 @@ const Hero: React.FC = () => {
           <h1 className="mt-6 text-5xl font-black tracking-tight text-white sm:text-6xl">
             Привіт, я <span className="text-neonpurple">Fronzen548</span>
           </h1>
-          <p className="mt-6 text-lg leading-8 text-slate-300">Node.js Developer & Full-Stack Enthusiast. Створюю сучасні веб-застосунки, API та інтерактивні інтерфейси з кращою продуктивністю та дизайном.</p>
+          <p className="mt-6 text-lg leading-8 text-slate-300">Я full-stack розробник, який створює масштабовані вебзастосунки, API та візуально привабливі 3D інтерфейси. Улюблені технології: Node.js, TypeScript, Three.js, React.</p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a href="#projects" className="inline-flex items-center justify-center gap-2 rounded-full bg-neonpurple px-6 py-3 text-sm font-semibold text-black transition hover:brightness-110">
               Переглянути проєкти
               <FiArrowRight />
             </a>
-            <a href="#contact" className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-neonblue/30 hover:bg-[#131021]">
-              Зв'язатися зі мною
+            <a href="/Fronzen548_Resume.pdf" download className="inline-flex items-center justify-center gap-2 rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-neonblue/30 hover:bg-[#131021]">
+              Завантажити CV
+              <FiDownload />
             </a>
           </div>
         </motion.div>
@@ -40,7 +41,7 @@ const Hero: React.FC = () => {
             { label: 'Node.js', value: 'Backend' },
             { label: 'Three.js', value: '3D' },
             { label: 'TypeScript', value: 'Typed' },
-            { label: 'API', value: 'Realtime' }
+            { label: 'Realtime', value: 'Socket.io' }
           ].map((item) => (
             <div key={item.label} className="rounded-3xl border border-white/10 bg-[#10102a]/80 p-5 shadow-[0_20px_50px_rgba(0,0,0,0.18)] transition hover:border-neonpurple/40">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-400">{item.label}</p>
@@ -56,7 +57,7 @@ const Hero: React.FC = () => {
           <a href="mailto:fronzen548@gmail.com" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#0b0914]/90 px-4 py-3 transition hover:border-neonpurple/30">
             <FiMail /> Email
           </a>
-          <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#0b0914]/90 px-4 py-3 transition hover:border-neonblue/30">
+          <a href="https://www.linkedin.com/in/fronzen548" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-[#0b0914]/90 px-4 py-3 transition hover:border-neonblue/30">
             <FiLinkedin /> LinkedIn
           </a>
         </div>
@@ -68,7 +69,7 @@ const Hero: React.FC = () => {
           <OrbitalSphere />
         </div>
         <div className="pointer-events-none absolute left-6 bottom-6 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200 backdrop-blur-xl">
-          Фокус 100%
+          4K Planet render
         </div>
       </div>
     </section>
