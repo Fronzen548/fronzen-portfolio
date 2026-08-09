@@ -1,23 +1,26 @@
 # Fronzen548 Portfolio
 
-Dark cyberpunk portfolio built with Next.js, TypeScript, Tailwind CSS, Framer Motion and React Three Fiber.
+Це темне кібepпанк портфоліо створене з використанням Next.js, TypeScript, Tailwind CSS, Framer Motion та React Three Fiber.
 
-## Features
-- Modern landing page with animated hero section
-- Interactive 3D orb powered by Three.js
-- Tech stack cards, project filters and project showcase
-- About section, contact form and contact cards
-- Responsive design with dark glassmorphism style
+## Що всередині
+- Сучасний landing page у стилі cyberpunk
+- 4K-подібний 3D рендер планети в hero-блоці
+- Блок технологій з іконками та стеком
+- Фільтрувані картки проєктів
+- Розділ «Про мене» з реальними даними
+- Контактна форма з бекендом API
+- Кнопка завантаження CV
 
-## Run locally
+## Розгортання локально
 1. `npm install`
 2. `npm run dev`
-3. Open `http://localhost:3000`
+3. Відкрийте `http://localhost:3000`
 
-## Production build
+## Продакшн
 - `npm run build`
 - `npm run start`
 
-## Notes
-- The contact form is connected to a placeholder API endpoint (`/api/contact`). Replace with your chosen email or messaging service for production.
-- Replace placeholder project links and images with your own content.
+## Важливо
+- Для реального відправлення повідомлень через контактну форму інтегруйте поштовий сервіс або webhook у `pages/api/contact.ts`
+- Замініть посилання на проєкти у `components/Projects.tsx` на ваші власні репозиторії
+- Завантажте свій реальний `Fronzen548_Resume.pdf` у папку `public` при необхідності
