@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
           <h1 className="mt-6 text-5xl font-black tracking-tight text-white sm:text-6xl">
             Привіт, я <span className="text-neonpurple">Fronzen548</span>
           </h1>
-          <p className="mt-6 text-lg leading-8 text-slate-300">Я full-stack розробник, який створює масштабовані вебзастосунки, API та візуально привабливі 3D інтерфейси. Улюблені технології: Node.js, TypeScript, Three.js, React.</p>
+          <p className="mt-6 text-lg leading-8 text-slate-300">Я full-stack розробник, який фокусуються на frontend та backend рішеннях. Створюю ефективні вебзастосунки, API та чисті інтерфейси з реальним результатом.</p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
             <a href="#projects" className="inline-flex items-center justify-center gap-2 rounded-full bg-neonpurple px-6 py-3 text-sm font-semibold text-black transition hover:brightness-110">
               Переглянути проєкти
@@ -38,10 +38,10 @@ const Hero: React.FC = () => {
 
         <motion.div initial={{ opacity: 0, x: -40 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.7, delay: 0.1 }} className="grid grid-cols-2 gap-4">
           {[
-            { label: 'Node.js', value: 'Backend' },
-            { label: 'Three.js', value: '3D' },
-            { label: 'TypeScript', value: 'Typed' },
-            { label: 'Realtime', value: 'Socket.io' }
+            { label: 'JavaScript', value: 'Продуктивний' },
+            { label: 'Node.js', value: 'Серверний' },
+            { label: 'HTML5', value: 'Семантичний' },
+            { label: 'CSS3', value: 'Сучасний' }
           ].map((item) => (
             <div key={item.label} className="rounded-3xl border border-white/10 bg-[#10102a]/80 p-5 shadow-[0_20px_50px_rgba(0,0,0,0.18)] transition hover:border-neonpurple/40">
               <p className="text-sm uppercase tracking-[0.3em] text-slate-400">{item.label}</p>
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
           <OrbitalSphere />
         </div>
         <div className="pointer-events-none absolute left-6 bottom-6 rounded-full border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-200 backdrop-blur-xl">
-          4K Planet render
+          8K Planet render
         </div>
       </div>
     </section>
