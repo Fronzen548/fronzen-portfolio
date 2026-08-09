@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: #0b0812;
+}
+html,body,#__next{height:100%}
+body{
+  background: linear-gradient(180deg,#05020a 0%, #0b0812 100%);
+  color: #e6eef8;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.container{max-width:1200px}
+
+/* cyberpunk accents */
+.text-neonpurple{color:#7c4dff}
+.bg-neonpurple{background:#7c4dff}
+.bg-neonblue{background:#00e5ff}
+.text-neonblue{color:#00e5ff}
+
+/* small helpers */
+.border-slate-800{border-color:#0f1724}
+
+/* make buttons pop on dark bg */
+button, a{transition:all .15s ease}
+
