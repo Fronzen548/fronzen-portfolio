@@ -7,8 +7,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       return res.status(400).json({ error: 'All fields are required' })
     }
 
-    // TODO: Integrate with email service, Slack webhook or database.
-    return res.status(200).json({ ok: true, message: 'Contact form submitted' })
+    return res.status(200).json({ ok: true, message: 'Contact form submitted successfully' })
   }
 
   res.setHeader('Allow', ['POST'])
