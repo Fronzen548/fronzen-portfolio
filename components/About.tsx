@@ -3,9 +3,9 @@ import { FiCheckCircle } from 'react-icons/fi'
 
 const aboutPoints = [
   'Чистий та підтримуваний код',
-  'Люблю нові технології',
-  'Увага до деталей',
-  'Постійний розвиток'
+  'Швидкі frontend рішення',
+  'Стабільна backend логіка',
+  'Увага до деталей'
 ]
 
 const About: React.FC = () => {
@@ -14,7 +14,7 @@ const About: React.FC = () => {
       <div className="rounded-[2rem] border border-white/10 bg-[#101125]/90 p-8 shadow-[0_35px_80px_rgba(0,0,0,0.25)] backdrop-blur-xl">
         <span className="text-xs tracking-[0.4em] uppercase text-neonblue">Про мене</span>
         <h2 className="mt-4 text-4xl font-bold">Хто я?</h2>
-        <p className="mt-4 text-slate-300 leading-8">Я — Fronzen548, full-stack розробник, який працює з Node.js, TypeScript, React та сучасними 3D інтерфейсами. Мені подобається перетворювати складні задачі в швидкі, красиві та стабільні продукти.</p>
+        <p className="mt-4 text-slate-300 leading-8">Я — Fronzen548, розробник, який створює сучасні frontend та backend рішення. Маю досвід у розробці веб-сайтів, SPA та серверних API, використовуючи JavaScript, Node.js, HTML5 і CSS3.</p>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           {aboutPoints.map((point) => (
@@ -37,11 +37,11 @@ const About: React.FC = () => {
         <div className="rounded-[1.75rem] bg-[#090912] p-8 text-center">
           <div className="mx-auto mb-6 h-60 w-60 rounded-[2rem] bg-gradient-to-br from-[#0a0830] to-[#130f37] shadow-[0_30px_80px_rgba(124,77,255,0.18)]" />
           <h3 className="text-2xl font-semibold">Fronzen548</h3>
-          <p className="mt-3 text-slate-400">Full-Stack Developer</p>
+          <p className="mt-3 text-slate-400">Frontend / Backend Developer</p>
           <div className="mt-6 grid gap-4 text-left text-slate-300">
             <div className="flex items-center justify-between rounded-3xl border border-white/10 bg-[#0c0b16]/80 p-4">
               <span>Focus</span>
-              <span className="font-semibold text-white">100%</span>
+              <span className="font-semibold text-white">Web Apps</span>
             </div>
             <div className="flex items-center justify-between rounded-3xl border border-white/10 bg-[#0c0b16]/80 p-4">
               <span>Experience</span>
