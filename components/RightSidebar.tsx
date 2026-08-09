@@ -3,10 +3,10 @@ import { SiJavascript, SiNodedotjs, SiHtml5, SiCss3 } from 'react-icons/si'
 import { FiDownload } from 'react-icons/fi'
 
 const techs = [
-  { name: 'JavaScript', icon: SiJavascript },
-  { name: 'Node.js', icon: SiNodedotjs },
-  { name: 'HTML5', icon: SiHtml5 },
-  { name: 'CSS3', icon: SiCss3 }
+  { name: 'JavaScript', icon: SiJavascript, bg: '#f7df1e', fg: '#111' },
+  { name: 'Node.js', icon: SiNodedotjs, bg: '#3c873a', fg: '#fff' },
+  { name: 'HTML5', icon: SiHtml5, bg: '#e34f26', fg: '#fff' },
+  { name: 'CSS3', icon: SiCss3, bg: '#1572B6', fg: '#fff' }
 ]
 
 const stats = [
@@ -38,7 +38,7 @@ const RightSidebar: React.FC = () => {
               const Icon = t.icon
               return (
                 <div key={t.name} className="flex items-center gap-4 rounded-2xl border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01))] px-4 py-3 transition transform hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(124,77,255,0.06)]">
-                  <span className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#071826] text-2xl text-neonblue shadow-[0_10px_40px_rgba(0,229,255,0.06)]">
+                  <span style={{ background: t.bg, color: t.fg }} className="flex h-12 w-12 items-center justify-center rounded-lg shadow-[0_10px_40px_rgba(0,0,0,0.25)]">
                     <Icon />
                   </span>
                   <div>
